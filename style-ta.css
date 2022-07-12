@@ -1,0 +1,56 @@
+.box .tab{
+    width:60%;
+    margin-top: -4.5%;
+}
+.tab li{
+    font: bold 2em/2.3em 'sans-serif';
+}
+#wrap .section:nth-of-type(1) .box img:nth-child(1){
+    width: 50%;
+    top: 10%;
+}
+#wrap .section:nth-of-type(1) .box img:nth-child(2){
+    width: 40%;
+    right: 8%;
+}
+#wrap .section:nth-of-type(1) .box img:nth-child(3){
+    width: 38%;
+    bottom: 3%;
+    right: 9%;
+}
+.profile .left{
+    width: 30%;
+    font: 400 1.3em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+.left img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -5%;
+}
+.left .clip{
+    top: -7.5%;
+}
+.left p{
+    width: 80%;
+    background-color: yellowgreen;
+}
+.skill ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill li{
+    width: 49%;
+    display: flex;
+    border-left: 2px solid #333;
+}
+.profile .right{
+    width: 70%;
+    margin-top: -1%;
+    font: 400 1.4em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+.skill .per{
+    height: 1.3em;
+    margin-top:2%;
+    background-color: #e7d9f0;
+}
