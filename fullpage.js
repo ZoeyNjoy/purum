@@ -9,8 +9,6 @@
 * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
 */
 
-// 2578 , 3674 부분 지움.
-
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -2577,7 +2575,7 @@
       if (getOptions().scrollOverflow) {
         getNodes(getState().panels).forEach(function (el) {
           el.addEventListener('scroll', scrollOverflowHandler.onPanelScroll);
-          // el.addEventListener('wheel', scrollOverflowHandler.preventScrollWhileMoving);
+          el.addEventListener('wheel', scrollOverflowHandler.preventScrollWhileMoving);
           el.addEventListener('keydown', scrollOverflowHandler.preventScrollWhileMoving);
           el.addEventListener('keydown', scrollOverflowHandler.blurFocusOnAfterLoad);
         });
@@ -3671,7 +3669,7 @@
         touchWrapper.removeEventListener(events.touchmove, touchMoveHandler, {
           passive: false
         });
-        // touchWrapper.addEventListener(events.touchstart, touchStartHandler);
+        touchWrapper.addEventListener(events.touchstart, touchStartHandler);
         touchWrapper.addEventListener(events.touchmove, touchMoveHandler, {
           passive: false
         });

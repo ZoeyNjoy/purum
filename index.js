@@ -3,20 +3,21 @@ new fullpage(
     autoScrolling:true,
     // 아래 두개는 페이지 숫자 알려주는
     anchors:['1page','2page','3page','4page'],
-    navigationTooltips:['Home','About','Portfolio','Contact'],
     navigation:true
     }
 );
+// 1page
+anime({
+    targets:'#home p',
+    translateY:100,
+    delay:anime.stagger(100),
+    direction:'alternate',
+    easing: 'easeInOutQuad',
+    loop:true,
+    duration:500
+})
 
-function Fullpage__init() {
-const $current = $('#wrap .section .fp-section .active');
-  $current.removeClass('active');
-  setTimeout(function() {
-    $current.addClass('active');
-});
-}
-Fullpage__init();
-
+// 2page 
 anime({
     targets: '.skill .per',
     borderRadius:50
