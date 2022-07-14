@@ -981,16 +981,16 @@
 
     var defaultOptions = {
       //navigation
-      menu: false,
+      menu: true,
       anchors: [],
       lockAnchors: false,
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: [],
-      showActiveTooltip: false,
-      slidesNavigation: false,
+      showActiveTooltip: true,
+      slidesNavigation: true,
       slidesNavPosition: 'bottom',
-      scrollBar: false,
+      scrollBar: true,
       hybrid: false,
       licenseKey: '',
       credits: {

@@ -1,11 +1,10 @@
 new fullpage(
     '#wrap', {
     autoScrolling:true,
-    // 아래 두개는 페이지 숫자 알려주는
-    anchors:['1page','2page','3page','4page'],
     navigation:true
     }
 );
+
 // 1page
 anime({
     targets:'#home p',

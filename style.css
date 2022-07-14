@@ -7,6 +7,9 @@ body{
     font-size: 1vw;
     color: #333;
 }
+body::-webkit-scrollbar{
+    display:none;
+}
 
 /* 메뉴바 */
 .menu{
@@ -27,6 +30,8 @@ body{
     text-align: center;
 }
 .menu li a{
+    cursor: pointer;
+    width: 100%;
     font: bold 1.2em/3em 'Noto Sans KR','Roboto', sans-serif;    
     color: #333;
 }
@@ -46,9 +51,7 @@ body{
 #wrap .section:nth-of-type(4){
     background: url(./image/bg1-2.svg) center/cover;
 }
-.section::-webkit-scrollbar{
-    display:none;
-}
+
 
 /* #home 1page */
 #home .bg{
