@@ -35,10 +35,11 @@ body::-webkit-scrollbar{
     font: bold 1.2em/3em 'Noto Sans KR','Roboto', sans-serif;    
     color: #333;
 }
+/* .menu ul .on a{
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+} */
 /* 풀스크린 */
-#wrap .section div{
-    margin-top: 1%;
-}
 #wrap .section:nth-of-type(1){
     background: url(./image/bg1-2.svg) center/cover;
 }
@@ -55,24 +56,36 @@ body::-webkit-scrollbar{
 
 /* #home 1page */
 #home .bg{
-    display: flex;
+    width: 100%;
+}
+.bg .box{
+    width: 70%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    fill:#DFB7FF;
 }
-#home p{
+.bg .txt{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.txt p{
     text-align: center;
     font: bold 10em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* #about 2page */
-#wrap #about .profile{
+#about .profile{
     width: 90%;
     margin: auto;
     display: flex;
-    margin-top: 4%;
-    /* background-color: antiquewhite; */
+    margin-top: 8%;
 }
 .profile .left{
     width: 40%;
@@ -80,7 +93,6 @@ body::-webkit-scrollbar{
 }
 .left img{
     width: 70%;
-    height: auto;
     margin-left: 15%;
     border-radius: 50%;
 }
@@ -100,10 +112,8 @@ body::-webkit-scrollbar{
     font: 400 .9em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
 .about{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     position: relative;
 }
 .about p{
@@ -111,16 +121,12 @@ body::-webkit-scrollbar{
     display: flex;
     border-left: 2px solid #333;
 }
-.about span{
-    margin-left: 1%;
-    width: 15%;
-    font-weight: 600;
-}
 .about p:nth-child(3){
     position: absolute;
     top: 25%;
     left: 50%;
 }
+.about,
 .edu,
 .work,
 .skill{
@@ -141,6 +147,7 @@ body::-webkit-scrollbar{
     flex-wrap: wrap;
     border-left: 2px solid #333;
 }
+.about span,
 .edu span,
 .work span{
     margin-left: 1%;
@@ -163,8 +170,8 @@ body::-webkit-scrollbar{
     font-weight: 600;
 }
 .skill .per{
-    height: 2em;
-    margin-top:1%;
+    height: 1.5em;
+    margin-top:2%;
     margin-left: 10%;
     background-color: #e7d9f0;
 }

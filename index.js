@@ -1,19 +1,23 @@
 new fullpage(
     '#wrap', {
-    autoScrolling:true,
+    anchors:['1page','2page','3page','4page'],
     navigation:true
     }
 );
 
+
+
+
 // 1page
 anime({
     targets:'#home p',
-    translateY:100,
-    delay:anime.stagger(100),
+    translateY:[-25,10],
+    // opacity:anime.stagger(0),
+    delay:anime.stagger(50),
     direction:'alternate',
-    easing: 'easeInOutQuad',
-    loop:true,
-    duration:500
+    easing: 'easeInExpo',
+    duration:500,
+    loop:true
 })
 
 // 2page 
