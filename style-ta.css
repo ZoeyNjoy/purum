@@ -10,7 +10,7 @@
     
 /* #about 2page */
 #about .profile{
-    margin-top: 20%;
+    margin-top: 15%;
     flex-wrap: wrap;
 }
 .profile .left{
@@ -32,13 +32,17 @@
 .profile .right{
     width: 50%;
     font: 400 1.5em/2em 'Noto Sans KR','Roboto', sans-serif;
+    position: relative;
 }
+
 .about p:nth-child(3){
     position: unset;
 }
-.about,
-.edu,
-.work{
+.edu::before,
+.work::before,
+.skill::before{
+    content: '';
+    display: block;
     margin-bottom: 15%;
 }
 .about span,
@@ -47,9 +51,8 @@
     width: 20%;
 }
 .skill{
-    width: 80%;
+    width: 160%;
     position: absolute;
-    top: 62%;
-    left: 10.5%;
-    transform: translateY(-50%);
+    left: -79%;
+    margin-top: -20%;
 }
