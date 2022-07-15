@@ -1,9 +1,9 @@
 /* 메뉴바 */
 .menu ul{
-    width: 60%;
+    width: 50%;
 }
 .menu li a{
-    font: bold 2.5em/4em 'Noto Sans KR','Roboto', sans-serif;
+    font: bold 2em/4em 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* 풀스크린 */
